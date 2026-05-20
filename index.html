@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="pt"><head>
+<!DOCTYPE html><html lang="pt" style="--cor-principal: #1a3a3a;"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>🇯🇵 Guia de Viagem ao Japão</title>
@@ -293,6 +293,73 @@ footer strong { color: var(--cor-dourado); }
   .roteiro-timeline::before { left: 38px; }
   body.painel-aberto { padding-right: 0; }
 }
+
+/* ══ SECÇÃO DE PREÇO ══════════════════════════════════════════ */
+.preco-section { background: var(--cor-cinza); }
+.preco-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem; margin-top: 2rem;
+}
+.preco-card {
+  background: #fff; border-radius: 12px; overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: transform 0.3s;
+}
+.preco-card:hover { transform: translateY(-4px); }
+.preco-card-header {
+  padding: 1.75rem 1.75rem 1.25rem;
+  background: linear-gradient(135deg, var(--cor-principal), #2d3561);
+}
+.preco-label {
+  font-size: 0.62rem; font-weight: 700; letter-spacing: 3px;
+  text-transform: uppercase; color: var(--cor-dourado); margin-bottom: 0.5rem;
+}
+.preco-valor {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.8rem; font-weight: 900; color: #fff; line-height: 1;
+}
+.preco-valor span { font-size: 1.3rem; font-weight: 400; }
+.preco-sub { color: rgba(255,255,255,0.6); font-size: 0.8rem; margin-top: 0.3rem; }
+.preco-card-body { padding: 1.25rem 1.75rem 1.75rem; }
+.preco-lista { list-style: none; margin-bottom: 0; }
+.preco-lista li {
+  font-size: 0.84rem; color: #555; padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+  display: flex; align-items: flex-start; gap: 0.5rem; line-height: 1.5;
+}
+.preco-lista li::before { content: '✓'; color: var(--cor-secundaria); font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+.preco-total {
+  margin-top: 1.25rem; padding: 0.9rem 1rem;
+  background: rgba(212,168,67,0.1); border-radius: 8px;
+  border-left: 3px solid var(--cor-dourado);
+  font-size: 0.88rem; color: var(--cor-principal);
+}
+.preco-total strong { font-size: 1.15rem; color: var(--cor-principal); display: block; margin-top: 0.15rem; }
+.preco-aviso {
+  margin-top: 2rem; padding: 1.25rem 1.5rem;
+  background: #fff; border-radius: 10px;
+  border-left: 4px solid var(--cor-dourado);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  font-size: 0.86rem; color: #555; line-height: 1.7;
+}
+.preco-aviso strong { color: var(--cor-principal); }
+.preco-tabela {
+  width: 100%; border-collapse: collapse;
+  margin-top: 2rem; font-size: 0.85rem;
+}
+.preco-tabela th {
+  background: var(--cor-principal); color: var(--cor-dourado);
+  padding: 0.75rem 1rem; text-align: left;
+  font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase;
+}
+.preco-tabela td {
+  padding: 0.7rem 1rem; border-bottom: 1px solid rgba(0,0,0,0.07);
+  color: #444;
+}
+.preco-tabela tr:last-child td { border-bottom: none; }
+.preco-tabela tr:nth-child(even) td { background: rgba(0,0,0,0.02); }
+.preco-tabela td strong { color: var(--cor-principal); }
 </style>
 </head>
 <body>
@@ -308,6 +375,7 @@ footer strong { color: var(--cor-dourado); }
   <ul class="nav-links">
     <li><a href="#destinos">Destinos</a></li>
     <li><a href="#roteiro">Roteiro</a></li>
+    <li><a href="#preco">Preço</a></li>
     <li><a href="#dicas">Dicas</a></li>
     <li><a href="#bagagem">Bagagem</a></li>
     <li><a href="#regras">Regras</a></li>
@@ -324,10 +392,10 @@ footer strong { color: var(--cor-dourado); }
     Uma experiência única para grupos de <span id="c-grupo-hero">6 a 8</span> pessoas com curadoria exclusiva por <span id="c-nome-hero">Manuel Pedro Nabais</span>.
   </p>
   <div class="hero-badges">
-    <span class="badge">🌸 <strong>12 noites</strong> · <span id="c-datas-hero">março / abril</span></span>
+    <span class="badge">🌸 <strong>12 noites</strong> · <span id="c-datas-hero">marco/abril </span></span>
     <span class="badge">👥 Grupo de <strong><span id="c-grupo-badge">6 a 8</span> pessoas</strong></span>
     <span class="badge">🗺️ <strong>5 cidades</strong> · Tokyo, Nikko, Hakone, Kanazawa, Kyoto</span>
-    <span class="badge">✈️ <span id="c-voos-hero">a marcar</span></span>
+    <span class="badge">✈️ <span id="c-voos-hero">A marcar</span></span>
   </div>
   <a class="hero-cta" href="#roteiro">Ver Roteiro Completo →</a>
 </section>
@@ -339,6 +407,97 @@ footer strong { color: var(--cor-dourado); }
   <span class="quote-author">— <span id="c-nome-quote">Manuel Pedro Nabais</span> 🌸</span>
 </div>
 
+<section id="preco" class="preco-section">
+  <div class="container">
+    <span class="section-tag">💶 Investimento</span>
+    <h2 class="section-title">Preço Transparente.<br><em>Sem Surpresas.</em></h2>
+    <p class="section-desc">Pagamento faseado para tornares esta viagem possível sem pressão financeira. Total por pessoa: <strong>5.550€</strong>, com a comodidade de pagar ao longo dos meses.</p>
+
+    <div class="preco-grid">
+
+      <!-- ENTRADA -->
+      <div class="preco-card">
+        <div class="preco-card-header">
+          <div class="preco-label">✈️ Entrada · À reserva</div>
+          <div class="preco-valor"><span>€</span>1.500</div>
+          <div class="preco-sub">Pagamento único para garantir o teu lugar</div>
+        </div>
+        <div class="preco-card-body">
+          <ul class="preco-lista">
+            <li>Voo Lisboa → Tokyo → Lisboa</li>
+            <li>Seguro de viagem completo</li>
+            <li>Lugar garantido no grupo</li>
+            <li>Acesso ao grupo privado de preparação</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PRESTAÇÕES -->
+      <div class="preco-card">
+        <div class="preco-card-header">
+          <div class="preco-label">🗓️ Prestações mensais</div>
+          <div class="preco-valor"><span>€</span>4.050</div>
+          <div class="preco-sub">Dividido em 7, 8 ou 9 prestações mensais</div>
+        </div>
+        <div class="preco-card-body">
+          <ul class="preco-lista">
+            <li>Todos os hotéis (12 noites)</li>
+            <li>Todos os transfers e transportes internos</li>
+            <li>JR Pass — Shinkansen incluído</li>
+            <li>Bilhetes antecipados (Skytree, Hakone, etc.)</li>
+            <li>Acompanhamento e curadoria total</li>
+          </ul>
+          <div class="preco-total">
+            Total por pessoa
+            <strong>1.500€ entrada + 4.050€ em prestações = 5.550€</strong>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- TABELA DE PRESTAÇÕES -->
+    <table class="preco-tabela">
+      <thead>
+        <tr>
+          <th>Nº de prestações</th>
+          <th>Valor mensal</th>
+          <th>Total prestações</th>
+          <th>Total viagem</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>9 meses</td>
+          <td><strong>450€ / mês</strong></td>
+          <td>4.050€</td>
+          <td><strong>5.550€</strong></td>
+        </tr>
+        <tr>
+          <td>8 meses</td>
+          <td><strong>507€ / mês</strong></td>
+          <td>4.050€</td>
+          <td><strong>5.550€</strong></td>
+        </tr>
+        <tr>
+          <td>7 meses</td>
+          <td><strong>579€ / mês</strong></td>
+          <td>4.050€</td>
+          <td><strong>5.550€</strong></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- AVISO IMPORTANTE -->
+    <div class="preco-aviso">
+      ⚠️ <strong>Como funcionam as prestações?</strong><br>
+      As prestações mensais iniciam-se apenas quando o grupo estiver completo (6 a 8 pessoas confirmadas). O número de prestações — 7, 8 ou 9 — depende da data em que o grupo fechar, de forma a que tudo esteja pago antes da partida em março/abril de 2027. O total a pagar em prestações é sempre <strong>4.050€</strong>, independentemente do número de meses.<br><br>
+      💡 <strong>Refeições por conta própria</strong> — orçamento estimado de 30 a 50€ por dia no Japão.
+    </div>
+
+  </div>
+</section>
+
 <section id="destinos">
   <div class="container">
     <span class="section-tag">🗺️ A Nossa Rota</span>
@@ -347,7 +506,7 @@ footer strong { color: var(--cor-dourado); }
     <div class="destinos-grid">
       <div class="destino-card">
         <div class="destino-header"><span class="destino-emoji">🏙️</span><span class="destino-noites">6 noites</span><div class="destino-nome">Tokyo</div><div class="destino-kanji">東京</div></div>
-        <div class="destino-body"><p class="destino-desc">A maior região metropolitana do mundo com 39 milhões de habitantes, em harmonia perfeita entre tradição e tecnologia.</p><ul class="destino-highlights"><li>Ginza · <span id="c-hotel-dest">a marcar</span></li><li>Senso-ji Temple · O mais icónico de Tokyo</li><li>Shibuya Crossing · O cruzamento mais famoso do mundo</li><li>Tokyo Skytree · Vista panorâmica ao pôr do sol</li><li>Akihabara · Cultura pop e electrónica</li><li>Mercado de Peixe Tsukiji</li><li>Meiji Shrine · Harajuku · Shinjuku</li></ul></div>
+        <div class="destino-body"><p class="destino-desc">A maior região metropolitana do mundo com 39 milhões de habitantes, em harmonia perfeita entre tradição e tecnologia.</p><ul class="destino-highlights"><li>Ginza · <span id="c-hotel-dest">A marcar</span></li><li>Senso-ji Temple · O mais icónico de Tokyo</li><li>Shibuya Crossing · O cruzamento mais famoso do mundo</li><li>Tokyo Skytree · Vista panorâmica ao pôr do sol</li><li>Akihabara · Cultura pop e electrónica</li><li>Mercado de Peixe Tsukiji</li><li>Meiji Shrine · Harajuku · Shinjuku</li></ul></div>
       </div>
       <div class="destino-card">
         <div class="destino-header"><span class="destino-emoji">⛩️</span><span class="destino-noites">Dia inteiro</span><div class="destino-nome">Nikko</div><div class="destino-kanji">日光</div></div>
@@ -379,7 +538,7 @@ footer strong { color: var(--cor-dourado); }
       <div class="dia-num"><div class="dia-num-inner"><span class="dia-num-label">DIA</span><span class="dia-num-n">1</span></div></div>
       <div class="dia-content">
         <div class="dia-titulo">✈️ Chegada a Tokyo <span class="dia-local">TOKYO</span></div>
-        <p class="dia-desc">Chegada ao aeroporto de Narita ou Haneda. Transfer para o hotel em Ginza — a marcar. Primeiro contacto com a cidade, passeio suave pelos arredores do hotel.</p>
+        <p class="dia-desc">Chegada ao aeroporto de Narita ou Haneda. Transfer para o hotel em Ginza — A marcar. Primeiro contacto com a cidade, passeio suave pelos arredores do hotel.</p>
         <p class="dia-dica">💡 Jet lag! Tenta manter-te acordado até às 21h para adaptar ao horário local (+8h de Lisboa).</p>
       </div>
     </div>
@@ -541,7 +700,7 @@ footer strong { color: var(--cor-dourado); }
 
 <footer>
   <p>© <span id="c-ano-footer">2027</span> · <strong id="c-nome-footer">Manuel Pedro Nabais</strong> · Guia de Viagem ao Japão · Todos os direitos reservados</p>
-  <p style="margin-top:0.4rem; opacity:0.5;" id="c-social-footer">Indiemania tel 925486494</p>
+  <p style="margin-top:0.4rem; opacity:0.5;" id="c-social-footer"> Tel 925486494  instagram Indiemania</p>
 </footer>
 
 <script>
