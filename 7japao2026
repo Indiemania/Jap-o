@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🇯🇵 Japão 2026 · 28 out — 11 nov · Manuel Pedro Nabais</title>
+<meta name="description" content="Roteiro completo da viagem ao Japão de 28 de outubro a 11 de novembro de 2026. Tokyo, Nikko, Hakone, Kanazawa, Kyoto e Kinosaki Onsen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#EFE9DD;
+  --paper-2:#FBF8F2;
+  --paper-3:#DFD5C2;
+  --ink:#181310;
+  --ink-dim:#463E35;
+  --momiji:#96271A;
+  --momiji-lit:#A82D1E;
+  --kaki:#82500B;
+  --kin:#6B5522;
+  --matsu:#3E5546;
+  --rule:rgba(24,19,16,.24);
+  --max:1140px;
+  --display:'Shippori Mincho',Georgia,serif;
+  --body:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  --hand:'Zen Kurenaido',var(--body);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
+body{
+  background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-weight:400;font-size:18px;line-height:1.75;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 24px}
+
+/* ---------- NAV ---------- */
+nav{
+  position:sticky;top:0;z-index:60;
+  background:rgba(239,233,221,.95);backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--rule);
+}
+.nav-in{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:28px}
+.brand{font-family:var(--display);font-weight:800;font-size:1.02rem;letter-spacing:.02em;text-decoration:none;white-space:nowrap}
+.brand span{color:var(--momiji-lit)}
+.nav-links{margin-left:auto;display:flex;gap:22px;overflow-x:auto;scrollbar-width:none}
+.nav-links::-webkit-scrollbar{display:none}
+.nav-links a{
+  text-decoration:none;font-size:.82rem;letter-spacing:.09em;text-transform:uppercase;
+  color:var(--ink-dim);white-space:nowrap;padding-bottom:2px;border-bottom:1px solid transparent;transition:.2s;
+}
+.nav-links a:hover,.nav-links a:focus-visible{color:var(--ink);border-color:var(--momiji)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;padding:96px 0 78px;overflow:hidden}
+.hero::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(760px 420px at 82% 8%, rgba(173,48,32,.13), transparent 62%),
+    radial-gradient(560px 380px at 8% 88%, rgba(169,106,17,.11), transparent 66%);
+  pointer-events:none;
+}
+.kanji-ghost{
+  position:absolute;right:-4%;top:2%;font-family:var(--display);font-weight:800;
+  font-size:clamp(200px,34vw,420px);line-height:.82;color:rgba(24,19,16,.05);
+  user-select:none;pointer-events:none;letter-spacing:-.04em;
+}
+.hero .wrap{position:relative;z-index:2}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;font-size:.74rem;letter-spacing:.24em;
+  text-transform:uppercase;color:var(--kaki);margin-bottom:26px;
+}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--kaki)}
+h1{
+  font-family:var(--display);font-weight:800;line-height:.94;letter-spacing:-.02em;
+  font-size:clamp(3.4rem,10.5vw,7.4rem);margin-bottom:6px;
+}
+h1 em{font-style:normal;color:var(--momiji-lit)}
+.hero-jp{font-family:var(--display);font-size:clamp(1.1rem,3vw,1.5rem);color:var(--ink-dim);letter-spacing:.34em;margin-bottom:30px}
+.hero-lede{max-width:610px;font-size:1.12rem;color:#2E2721;margin-bottom:38px}
+
+.datestrip{
+  display:flex;flex-wrap:wrap;align-items:stretch;gap:0;
+  border:1px solid var(--rule);border-radius:3px;background:rgba(253,251,247,.9);
+  max-width:720px;margin-bottom:34px;
+}
+.ds-cell{padding:18px 26px;flex:1 1 150px;border-right:1px solid var(--rule)}
+.ds-cell:last-child{border-right:0}
+.ds-k{font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim);margin-bottom:5px}
+.ds-v{font-family:var(--display);font-weight:600;font-size:1.34rem;line-height:1.2}
+.ds-v small{display:block;font-family:var(--body);font-weight:300;font-size:.8rem;color:var(--ink-dim);letter-spacing:.04em;margin-top:3px}
+
+.btn{
+  display:inline-block;text-decoration:none;font-size:.86rem;letter-spacing:.13em;text-transform:uppercase;
+  padding:16px 34px;background:var(--momiji);color:#fff;border:1px solid var(--momiji);
+  transition:.22s;border-radius:2px;
+}
+.btn:hover,.btn:focus-visible{background:transparent;color:var(--momiji-lit)}
+.btn.ghost{background:transparent;color:var(--ink);border-color:rgba(36,30,25,.36);margin-left:10px}
+.btn.ghost:hover{border-color:var(--kin);color:var(--kin)}
+
+/* ---------- SECTION ---------- */
+section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
+.flight,.dest,.card,.bag,.ryokan-card,.bath,.hotels,.etiq{box-shadow:0 1px 2px rgba(36,30,25,.06),0 10px 26px -16px rgba(36,30,25,.36)}
+.sec-head{margin-bottom:52px;max-width:760px}
+.sec-head h2{
+  font-family:var(--display);font-weight:800;font-size:clamp(2rem,5.2vw,3.2rem);
+  line-height:1.08;letter-spacing:-.015em;margin-bottom:16px;
+}
+.sec-head h2 em{font-style:italic;color:var(--kaki);font-weight:600}
+.sec-head p{color:var(--ink-dim);font-size:1.08rem}
+
+/* ---------- VOOS ---------- */
+.flights{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:22px}
+.flight{
+  border:1px solid var(--rule);background:linear-gradient(165deg,#FFFFFF,var(--paper-2));
+  border-radius:3px;padding:30px 28px;position:relative;overflow:hidden;
+}
+.flight::after{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--momiji),var(--kaki))}
+.f-tag{font-size:.7rem;letter-spacing:.22em;text-transform:uppercase;color:var(--kaki);margin-bottom:22px}
+.f-row{display:flex;align-items:flex-start;gap:16px;margin-bottom:20px}
+.f-pt{flex:1}
+.f-city{font-family:var(--display);font-weight:600;font-size:1.5rem;line-height:1.15}
+.f-time{font-family:var(--display);font-weight:800;font-size:2.1rem;color:var(--momiji-lit);line-height:1.1;letter-spacing:-.02em}
+.f-date{font-size:.9rem;color:var(--ink-dim);letter-spacing:.05em}
+.f-mid{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:12px;min-width:52px}
+.f-mid span{font-size:.64rem;letter-spacing:.14em;color:var(--ink-dim);text-transform:uppercase;margin-top:6px}
+.f-line{width:100%;height:1px;background:var(--rule);position:relative}
+.f-line::after{content:"✈";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#FCFAF6;padding:0 6px;color:var(--kin);font-size:.9rem}
+.f-foot{border-top:1px dashed var(--rule);padding-top:16px;margin-top:6px;font-size:.96rem;color:var(--ink-dim)}
+.f-foot strong{color:var(--ink);font-weight:500}
+
+/* ---------- HOTÉIS ---------- */
+.hotels{display:grid;gap:0;border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.hotel{
+  display:grid;grid-template-columns:132px 1fr auto;gap:24px;align-items:center;
+  padding:24px 26px;border-bottom:1px solid rgba(36,30,25,.16);transition:.2s;
+}
+.hotel:last-child{border-bottom:0}
+.hotel:hover{background:rgba(173,48,32,.045)}
+.h-city{font-family:var(--display);font-weight:800;font-size:1.18rem;letter-spacing:.01em}
+.h-city small{display:block;font-family:var(--display);font-weight:400;font-size:.9rem;color:var(--kin);letter-spacing:.2em;margin-top:2px}
+.h-name{font-size:1.02rem;font-weight:500;color:var(--ink)}
+.h-name span{display:block;font-weight:400;font-size:.94rem;color:var(--ink-dim);margin-top:3px}
+.h-nights{text-align:right;white-space:nowrap}
+.h-n{font-family:var(--display);font-weight:800;font-size:1.8rem;color:var(--momiji-lit);line-height:1}
+.h-nlabel{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim)}
+
+/* ---------- DESTINOS ---------- */
+.dest-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.dest{border:1px solid var(--rule);border-radius:3px;padding:30px 26px;background:var(--paper-2);transition:.25s;position:relative}
+.dest:hover{transform:translateY(-4px);border-color:var(--momiji)}
+.d-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.d-badge{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--kaki);border:1px solid var(--rule);padding:4px 10px;border-radius:2px}
+.dest h3{font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1.1}
+.d-jp{font-family:var(--display);color:var(--kin);letter-spacing:.3em;font-size:1rem;margin:2px 0 14px}
+.dest p{font-size:1rem;color:var(--ink-dim);margin-bottom:18px}
+.dest ul{list-style:none;font-size:.97rem}
+.dest li{padding:7px 0 7px 20px;position:relative;border-top:1px solid rgba(36,30,25,.14)}
+.dest li::before{content:"—";position:absolute;left:0;color:var(--momiji)}
+.dest li b{font-weight:500;color:var(--ink)}
+
+/* ---------- ROTEIRO ---------- */
+.timeline{position:relative;padding-left:0}
+.day{
+  display:grid;grid-template-columns:104px 1fr;gap:0;
+  border-top:1px solid var(--rule);
+}
+.day:last-child{border-bottom:1px solid var(--rule)}
+.d-rail{
+  border-right:1px solid var(--rule);padding:26px 18px 26px 0;text-align:right;position:relative;
+}
+.d-num{font-family:var(--display);font-weight:800;font-size:1.05rem;color:var(--kaki);letter-spacing:.04em}
+.d-date{font-size:.88rem;color:var(--ink-dim);margin-top:2px;line-height:1.35}
+.d-date b{display:block;color:var(--ink);font-weight:500;font-size:.95rem}
+.d-body{padding:26px 0 26px 26px}
+.d-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:8px}
+.d-title{font-family:var(--display);font-weight:600;font-size:1.28rem;line-height:1.25}
+.d-place{font-size:.66rem;letter-spacing:.18em;text-transform:uppercase;color:#fff;background:var(--kin);padding:3px 9px;border-radius:2px;font-weight:500}
+.d-place.tokyo{background:var(--momiji);color:#fff}
+.d-place.air{background:var(--matsu);color:#FFFFFF}
+.d-place.onsen{background:var(--kaki);color:#fff}
+.d-body p{font-size:1.04rem;color:#2E2721}
+.tip{
+  margin-top:14px;font-family:var(--hand);font-size:1.05rem;color:var(--kaki);
+  border-left:2px solid var(--kaki);padding:4px 0 4px 14px;
+}
+
+/* ---------- KINOSAKI ---------- */
+.onsen-sec{background:
+  radial-gradient(700px 420px at 78% 20%, rgba(169,106,17,.09), transparent 65%),
+  var(--paper-2);
+}
+.onsen-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start;margin-bottom:46px}
+.onsen-intro p{color:#2E2721;margin-bottom:16px;font-size:1.04rem}
+.ryokan-card{border:1px solid var(--kin);border-radius:3px;padding:26px;background:rgba(253,251,247,.95)}
+.ryokan-card .rk-t{font-family:var(--display);font-weight:800;font-size:1.35rem;margin-bottom:4px}
+.ryokan-card .rk-jp{font-family:var(--display);color:var(--kin);letter-spacing:.25em;margin-bottom:16px;font-size:.95rem}
+.rk-list{list-style:none;font-size:1rem}
+.rk-list li{padding:8px 0;border-top:1px solid rgba(36,30,25,.16);display:flex;gap:12px}
+.rk-list li b{color:var(--kaki);font-weight:500;min-width:88px;flex-shrink:0}
+
+.pass-title{font-family:var(--display);font-weight:800;font-size:1.5rem;margin-bottom:6px}
+.pass-sub{color:var(--ink-dim);font-size:1.02rem;margin-bottom:26px}
+.baths{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:14px}
+.bath{
+  border:1px solid var(--rule);border-radius:3px;padding:20px;background:rgba(253,251,247,.92);
+  position:relative;transition:.22s;
+}
+.bath:hover{border-color:var(--kaki);transform:translateY(-3px)}
+.bath.closed{opacity:.42;filter:grayscale(.6)}
+.b-n{font-family:var(--display);font-weight:800;font-size:1.6rem;color:rgba(36,30,25,.16);line-height:1;position:absolute;top:16px;right:18px}
+.b-name{font-family:var(--display);font-weight:600;font-size:1.12rem}
+.b-jp{font-family:var(--display);color:var(--kin);letter-spacing:.18em;font-size:.85rem;margin:1px 0 10px}
+.bath p{font-size:.96rem;color:var(--ink-dim);line-height:1.6}
+.b-tag{display:inline-block;margin-top:10px;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--kaki);border:1px solid var(--rule);padding:3px 8px;border-radius:2px}
+.b-tag.off{color:var(--momiji-lit)}
+.onsen-note{margin-top:26px;border-left:2px solid var(--momiji);padding-left:18px;font-family:var(--hand);color:var(--kaki);font-size:1rem}
+
+/* ---------- CARDS GENÉRICOS ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(272px,1fr));gap:18px}
+.card{border:1px solid var(--rule);border-radius:3px;padding:26px 24px;background:var(--paper-2);transition:.22s}
+.card:hover{border-color:var(--kin)}
+.c-ic{font-size:1.5rem;margin-bottom:12px;display:block}
+.card h4{font-family:var(--display);font-weight:600;font-size:1.14rem;margin-bottom:8px}
+.card p{font-size:.99rem;color:var(--ink-dim)}
+.card p b{color:var(--ink);font-weight:500}
+
+.bag-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
+.bag{border:1px solid var(--rule);border-radius:3px;padding:26px 24px;background:var(--paper-2)}
+.bag h4{font-family:var(--display);font-weight:800;font-size:1.16rem;margin-bottom:4px}
+.bag .bg-s{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--kaki);margin-bottom:16px}
+.bag ul{list-style:none;font-size:1rem}
+.bag li{padding:9px 0;border-top:1px solid rgba(36,30,25,.15);color:var(--ink-dim)}
+.bag li b{color:var(--ink);font-weight:500}
+
+.etiq{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid var(--rule);border-radius:3px;overflow:hidden}
+.et{padding:22px 24px;border-right:1px solid rgba(36,30,25,.15);border-bottom:1px solid rgba(36,30,25,.15)}
+.et b{display:block;font-family:var(--display);font-weight:600;font-size:1.04rem;margin-bottom:5px}
+.et span{font-size:.96rem;color:var(--ink-dim)}
+
+/* ---------- CTA / FOOTER ---------- */
+.cta{text-align:center;padding:96px 0}
+.cta h2{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5.5vw,3.4rem);line-height:1.08;margin-bottom:18px}
+.cta p{color:var(--ink-dim);max-width:540px;margin:0 auto 34px}
+footer{border-top:1px solid var(--rule);padding:34px 0;font-size:.93rem;color:var(--ink-dim)}
+.foot-in{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
+footer b{color:var(--ink);font-weight:500}
+footer a{color:var(--kin);text-decoration:none}
+footer a:hover{text-decoration:underline}
+
+.quote{
+  font-family:var(--display);font-style:italic;font-size:clamp(1.15rem,2.6vw,1.6rem);
+  line-height:1.55;max-width:760px;color:#221C17;border-left:2px solid var(--momiji);padding-left:26px;
+}
+.quote cite{display:block;font-style:normal;font-size:.88rem;letter-spacing:.12em;text-transform:uppercase;color:var(--kaki);margin-top:18px;font-family:var(--body)}
+
+/* ---------- REVEAL ---------- */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .65s ease,transform .65s ease}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:860px){
+  .onsen-intro{grid-template-columns:1fr;gap:28px}
+  .hotel{grid-template-columns:1fr;gap:8px;padding:22px}
+  .h-nights{text-align:left}
+  .h-n{display:inline;font-size:1.3rem}
+  .h-nlabel{display:inline;margin-left:6px}
+}
+@media (max-width:640px){
+  body{font-size:17.5px}
+  section{padding:64px 0}
+  .hero{padding:64px 0 54px}
+  .day{grid-template-columns:1fr}
+  .d-rail{text-align:left;border-right:0;padding:22px 0 0;display:flex;gap:14px;align-items:baseline}
+  .d-date{margin-top:0}
+  .d-date b{display:inline}
+  .d-body{padding:10px 0 24px}
+  .ds-cell{flex:1 1 100%;border-right:0;border-bottom:1px solid var(--rule)}
+  .ds-cell:last-child{border-bottom:0}
+  .btn.ghost{margin-left:0;margin-top:10px}
+  .f-time{font-size:1.7rem}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+:focus-visible{outline:2px solid var(--kaki);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-in">
+    <a href="#topo" class="brand">🇯🇵 Japão <span>2026</span></a>
+    <div class="nav-links">
+      <a href="#voos">Voos</a>
+      <a href="#hoteis">Hotéis</a>
+      <a href="#destinos">Destinos</a>
+      <a href="#roteiro">Roteiro</a>
+      <a href="#kinosaki">Kinosaki</a>
+      <a href="#dicas">Dicas</a>
+      <a href="#bagagem">Bagagem</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="topo">
+  <div class="kanji-ghost">紅葉</div>
+  <div class="wrap">
+    <div class="eyebrow">Outono · Época do koyo · 2026</div>
+    <h1>Japão<em>.</em></h1>
+    <div class="hero-jp">日本への旅</div>
+    <p class="hero-lede">
+      Onde o passado e o futuro dão as mãos. Doze noites atravessando o arquipélago no auge do
+      outono — dos bordos vermelhos de Nikko aos jardins de Kanazawa, dos templos de Kyoto ao
+      vapor das águas termais de Kinosaki.
+    </p>
+
+    <div class="datestrip">
+      <div class="ds-cell">
+        <div class="ds-k">Partida</div>
+        <div class="ds-v">28 out<small>quarta-feira · Lisboa</small></div>
+      </div>
+      <div class="ds-cell">
+        <div class="ds-k">Regresso</div>
+        <div class="ds-v">11 nov<small>quarta-feira · Lisboa</small></div>
+      </div>
+      <div class="ds-cell">
+        <div class="ds-k">Duração</div>
+        <div class="ds-v">12 noites<small>6 destinos</small></div>
+      </div>
+      <div class="ds-cell">
+        <div class="ds-k">Grupo</div>
+        <div class="ds-v">6 a 8<small>curadoria M. P. Nabais</small></div>
+      </div>
+    </div>
+
+    <a href="#roteiro" class="btn">Ver roteiro completo</a>
+    <a href="#kinosaki" class="btn ghost">A noite de onsen</a>
+  </div>
+</header>
+
+<!-- VOOS -->
+<section id="voos">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Lisboa — Tokyo.<br><em>Osaka — Lisboa.</em></h2>
+      <p>Entramos por Tokyo e saímos por Osaka, sem regressar atrás. O roteiro corre sempre para a frente.</p>
+    </div>
+
+    <div class="flights rv">
+      <div class="flight">
+        <div class="f-tag">Ida · Emirates · via Dubai</div>
+        <div class="f-row">
+          <div class="f-pt">
+            <div class="f-time">13:35</div>
+            <div class="f-city">Lisboa</div>
+            <div class="f-date">Qua, 28 de outubro</div>
+          </div>
+          <div class="f-mid"><div class="f-line"></div><span>+8h</span></div>
+          <div class="f-pt" style="text-align:right">
+            <div class="f-time">17:29</div>
+            <div class="f-city">Tokyo</div>
+            <div class="f-date">Qui, 29 de outubro</div>
+          </div>
+        </div>
+        <div class="f-foot">
+          Chegada ao <strong>fim da tarde do dia seguinte</strong>. O Japão está <strong>+8 horas</strong>
+          à frente de Lisboa — as 17:29 em Tokyo são 09:29 em Portugal.
+        </div>
+      </div>
+
+      <div class="flight">
+        <div class="f-tag">Volta · Emirates · via Dubai</div>
+        <div class="f-row">
+          <div class="f-pt">
+            <div class="f-time">23:10</div>
+            <div class="f-city">Osaka</div>
+            <div class="f-date">Ter, 10 de novembro</div>
+          </div>
+          <div class="f-mid"><div class="f-line"></div><span>−8h</span></div>
+          <div class="f-pt" style="text-align:right">
+            <div class="f-time">12:00</div>
+            <div class="f-city">Lisboa</div>
+            <div class="f-date">Qua, 11 de novembro</div>
+          </div>
+        </div>
+        <div class="f-foot">
+          Voo noturno a partir do <strong>Kansai (KIX)</strong>. O dia 10 fica inteiro livre em Kyoto —
+          saímos para o aeroporto ao fim da tarde, com tempo de sobra.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- HOTÉIS -->
+<section id="hoteis">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Onde <em>dormimos.</em></h2>
+      <p>Quatro moradas, todas escolhidas pela mesma razão: sair da porta e estar já onde interessa.</p>
+    </div>
+
+    <div class="hotels rv">
+      <div class="hotel">
+        <div class="h-city">Tokyo<small>東京</small></div>
+        <div class="h-name">Daiwa Roynet Hotel Ginza PREMIER
+          <span>Ginza · 29 out — 4 nov</span></div>
+        <div class="h-nights"><span class="h-n">6</span> <span class="h-nlabel">noites</span></div>
+      </div>
+      <div class="hotel">
+        <div class="h-city">Kanazawa<small>金沢</small></div>
+        <div class="h-name">Mitsui Garden Hotel Kanazawa
+          <span>Junto à estação · 4 — 6 nov</span></div>
+        <div class="h-nights"><span class="h-n">2</span> <span class="h-nlabel">noites</span></div>
+      </div>
+      <div class="hotel">
+        <div class="h-city">Kyoto<small>京都</small></div>
+        <div class="h-name">Mitsui Garden Hotel Kyoto Station
+          <span>Frente à estação · 6 — 8 nov</span></div>
+        <div class="h-nights"><span class="h-n">2</span> <span class="h-nlabel">noites</span></div>
+      </div>
+      <div class="hotel">
+        <div class="h-city">Kinosaki<small>城崎</small></div>
+        <div class="h-name">Ryokan AKAISHIYA
+          <span>Kinosaki Onsen · 8 — 9 nov · passe dos banhos incluído</span></div>
+        <div class="h-nights"><span class="h-n">1</span> <span class="h-nlabel">noite</span></div>
+      </div>
+      <div class="hotel">
+        <div class="h-city">Kyoto<small>京都</small></div>
+        <div class="h-name">Mitsui Garden Hotel Kyoto Station
+          <span>Regresso · 9 — 10 nov</span></div>
+        <div class="h-nights"><span class="h-n">1</span> <span class="h-nlabel">noite</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DESTINOS -->
+<section id="destinos">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Seis destinos.<br><em>Um Japão inesquecível.</em></h2>
+      <p>Das metrópoles vibrantes aos jardins serenos — e, no fim, a uma aldeia termal onde se anda de yukata pela rua.</p>
+    </div>
+
+    <div class="dest-grid rv">
+      <div class="dest">
+        <div class="d-top"><h3>Tokyo</h3><span class="d-badge">6 noites</span></div>
+        <div class="d-jp">東京</div>
+        <p>A maior região metropolitana do mundo, 39 milhões de pessoas em harmonia entre tradição e tecnologia.</p>
+        <ul>
+          <li><b>Ginza</b> · a nossa base, o bairro mais elegante</li>
+          <li><b>Senso-ji</b> · o templo mais icónico de Tokyo</li>
+          <li><b>Shibuya Crossing</b> · o cruzamento mais famoso do mundo</li>
+          <li><b>Tokyo Skytree</b> · vista panorâmica ao pôr do sol</li>
+          <li><b>Akihabara</b> · cultura pop e electrónica</li>
+          <li><b>Tsukiji, Meiji Shrine, Harajuku, Shinjuku</b></li>
+        </ul>
+      </div>
+
+      <div class="dest">
+        <div class="d-top"><h3>Nikko</h3><span class="d-badge">Dia inteiro</span></div>
+        <div class="d-jp">日光</div>
+        <p>Uma das regiões mais sagradas do Japão — e, no início de novembro, das mais espetaculares em cor.</p>
+        <ul>
+          <li><b>Shinkyo Bridge</b> · a ponte sagrada vermelha</li>
+          <li><b>Rinnoji</b> · templo budista histórico</li>
+          <li><b>Toshogu</b> · mausoléu do xogum Ieyasu</li>
+          <li><b>Kegon Falls</b> · cascata de 97 metros</li>
+          <li><b>Lago Chūzenji</b> · bordos em chamas</li>
+        </ul>
+      </div>
+
+      <div class="dest">
+        <div class="d-top"><h3>Hakone</h3><span class="d-badge">Dia inteiro</span></div>
+        <div class="d-jp">箱根</div>
+        <p>Dia exclusivo com vista privilegiada para o Monte Fuji em condições favoráveis.</p>
+        <ul>
+          <li><b>Open Air Museum</b> · arte ao ar livre</li>
+          <li><b>Hakone Ropeway</b> · telecabine sobre o vulcão</li>
+          <li><b>Owakudani</b> · vale vulcânico ativo</li>
+          <li><b>Pirate Boat</b> · travessia do Lago Ashi</li>
+          <li><b>Monte Fuji</b> 🗻 · com céu limpo</li>
+        </ul>
+      </div>
+
+      <div class="dest">
+        <div class="d-top"><h3>Kanazawa</h3><span class="d-badge">2 noites</span></div>
+        <div class="d-jp">金沢</div>
+        <p>A "Kyoto do Japão ocidental", poupada às bombas da guerra, com tradição samurai e cultura das gueixas intactas.</p>
+        <ul>
+          <li><b>Kenrokuen</b> · um dos 3 jardins mais belos do Japão</li>
+          <li><b>Castelo de Kanazawa</b> · história feudal</li>
+          <li><b>Omicho Market</b> · gastronomia local</li>
+          <li><b>Nagamachi</b> · bairro dos samurais</li>
+          <li><b>Higashi Chaya</b> · casas de chá das gueixas</li>
+        </ul>
+      </div>
+
+      <div class="dest">
+        <div class="d-top"><h3>Kyoto</h3><span class="d-badge">3 noites</span></div>
+        <div class="d-jp">京都</div>
+        <p>A antiga capital imperial, o coração espiritual do Japão, com mais de 1600 templos budistas.</p>
+        <ul>
+          <li><b>Fushimi Inari</b> · mil torii vermelhos</li>
+          <li><b>Arashiyama</b> · floresta de bambu</li>
+          <li><b>Kinkaku-ji</b> · o Pavilhão Dourado</li>
+          <li><b>Gion</b> · bairro histórico das gueixas</li>
+          <li><b>Kiyomizu-dera</b> · templo sobre a montanha</li>
+          <li><b>Caminho da Filosofia</b> · passeio meditativo</li>
+        </ul>
+      </div>
+
+      <div class="dest">
+        <div class="d-top"><h3>Kinosaki Onsen</h3><span class="d-badge">1 noite</span></div>
+        <div class="d-jp">城崎温泉</div>
+        <p>Aldeia termal de salgueiros e pontes de pedra na costa do Mar do Japão. Aqui dorme-se em ryokan e anda-se de yukata e geta pela rua, de banho em banho.</p>
+        <ul>
+          <li><b>Sete soto-yu</b> · os banhos públicos da aldeia</li>
+          <li><b>Ryokan Akaishiya</b> · jantar kaiseki e banho privado</li>
+          <li><b>Onsenji</b> · templo no alto, de teleférico</li>
+          <li><b>Caranguejo matsuba</b> · época abre a 6 de novembro</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ROTEIRO -->
+<section id="roteiro">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Roteiro de <em>12 noites.</em></h2>
+      <p>Cada dia pensado ao pormenor para equilibrar cultura, gastronomia, exploração e momentos livres.</p>
+    </div>
+
+    <div class="timeline rv">
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 1</div><div class="d-date"><b>28 out</b>quarta</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">✈️ Partida de Lisboa</span><span class="d-place air">A caminho</span></div>
+          <p>Encontro no aeroporto de Lisboa. Descolagem às <b>13:35</b> em voo Emirates com escala em Dubai. Noite a bordo, rumo ao Extremo Oriente.</p>
+          <div class="tip">Ajusta o relógio logo à partida. Dormir no segundo troço é meio caminho andado contra o jet lag.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 2</div><div class="d-date"><b>29 out</b>quinta</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🛬 Chegada a Tokyo</span><span class="d-place tokyo">Tokyo</span></div>
+          <p>Aterragem às <b>17:29</b>. Formalidades de entrada, transfer e check-in no <b>Daiwa Roynet Hotel Ginza PREMIER</b>. Primeiro contacto com a cidade: jantar leve e passeio pelas ruas de Ginza iluminadas.</p>
+          <div class="tip">Jet lag! Aguenta acordado até às 22h — assim o corpo entra logo no horário local (+8h de Lisboa).</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 3</div><div class="d-date"><b>30 out</b>sexta</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🏙️ Ginza, Odaiba &amp; Asakusa</span><span class="d-place tokyo">Tokyo</span></div>
+          <p>Manhã em Ginza. Tarde em Odaiba, com o comboio autónomo a atravessar a baía. Senso-ji ao fim do dia e <b>Tokyo Skytree</b> ao pôr do sol.</p>
+          <div class="tip">Bilhetes do Skytree comprados 30 dias antes, para a janela das 16:30.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 4</div><div class="d-date"><b>31 out</b>sábado</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">⛩️ Shibuya, Harajuku &amp; Shinjuku</span><span class="d-place tokyo">Tokyo</span></div>
+          <p>Manhã no Meiji Shrine e em Harajuku (Takeshita Street). Tarde na mítica <b>Shibuya Crossing</b>. Jantar e passeio noturno em Shinjuku.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 5</div><div class="d-date"><b>1 nov</b>domingo</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🐟 Tsukiji, Koishikawa &amp; Akihabara</span><span class="d-place tokyo">Tokyo</span></div>
+          <p>Manhã cedo no Mercado Tsukiji. Jardins <b>Koishikawa Korakuen</b> — dos primeiros a mudar de cor em Tokyo. Tarde em Akihabara.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 6</div><div class="d-date"><b>2 nov</b>segunda</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">⛩️ Passeio a Nikko</span><span class="d-place">Nikko</span></div>
+          <p>Dia inteiro em Nikko (~2h de comboio). Shinkyo Bridge, Rinnoji, Toshogu, Kegon Falls e Lago Chūzenji. Regresso a Tokyo ao final da tarde.</p>
+          <div class="tip">Início de novembro é o pico do koyo em Nikko — dia a agendar conforme a meteorologia.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 7</div><div class="d-date"><b>3 nov</b>terça</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🗻 Passeio a Hakone</span><span class="d-place">Hakone</span></div>
+          <p>Dia inteiro em Hakone. Open Air Museum, telecabine sobre Owakudani, barco no Lago Ashi e — com boa sorte — vista épica do Monte Fuji.</p>
+          <div class="tip">Trocável com o dia de Nikko: o Fuji só aparece com céu limpo.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 8</div><div class="d-date"><b>4 nov</b>quarta</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🚄 Tokyo → Kanazawa</span><span class="d-place">Kanazawa</span></div>
+          <p>Check-out em Ginza e Shinkansen Hokuriku para Kanazawa (~2h30). Check-in no <b>Mitsui Garden Hotel Kanazawa</b>. Tarde no Higashi Chaya District, o bairro das casas de chá.</p>
+          <div class="tip">Kanazawa é a "Kyoto que escapou às bombas" — um tesouro intacto.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 9</div><div class="d-date"><b>5 nov</b>quinta</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🏯 Kenrokuen, Castelo &amp; samurais</span><span class="d-place">Kanazawa</span></div>
+          <p>Jardim <b>Kenrokuen</b> logo à abertura, Castelo de Kanazawa, bairro samurai de Nagamachi e almoço no Omicho Market.</p>
+          <div class="tip">É a época dos <i>yukitsuri</i> — as cordas em cone que protegem os pinheiros da neve. Ficam lindíssimas em fotografia.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 10</div><div class="d-date"><b>6 nov</b>sexta</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🚄 Kanazawa → Kyoto</span><span class="d-place">Kyoto</span></div>
+          <p>Manhã livre em Kanazawa. Comboio Thunderbird para Kyoto. Check-in no <b>Mitsui Garden Hotel Kyoto Station</b>. Tarde e noite em Gion.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 11</div><div class="d-date"><b>7 nov</b>sábado</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">⛩️ Fushimi Inari, Kiyomizu &amp; Nishiki</span><span class="d-place">Kyoto</span></div>
+          <p>Manhã cedo em <b>Fushimi Inari</b> — mil torii vermelhos sem multidões. Tarde em Kiyomizu-dera e passeio pelo Nishiki Market.</p>
+          <div class="tip">Fushimi Inari tem milhares de degraus. Calçado confortável é obrigatório.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 12</div><div class="d-date"><b>8 nov</b>domingo</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">♨️ Kyoto → Kinosaki Onsen</span><span class="d-place onsen">Kinosaki</span></div>
+          <p>Comboio <b>Limited Express Kinosaki</b> a partir da estação de Kyoto (~2h40), atravessando o interior montanhoso. Check-in no <b>Ryokan Akaishiya</b>, yukata vestido e a tarde e a noite dedicadas aos banhos da aldeia. Jantar kaiseki no ryokan.</p>
+          <div class="tip">A partir do momento em que vestes o yukata, não voltas a calçar sapatos. A aldeia inteira faz-se de geta.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 13</div><div class="d-date"><b>9 nov</b>segunda</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🍁 Kinosaki → Kyoto</span><span class="d-place">Kyoto</span></div>
+          <p>Banho matinal — o melhor do dia — e pequeno-almoço japonês. Regresso a Kyoto ao início da tarde e check-in de novo no <b>Mitsui Garden Hotel Kyoto Station</b>. Fim de tarde no <b>Kinkaku-ji</b> ou no Caminho da Filosofia.</p>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 14</div><div class="d-date"><b>10 nov</b>terça</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🎍 Arashiyama e partida de Osaka</span><span class="d-place air">Kyoto → KIX</span></div>
+          <p>Manhã na floresta de bambu de <b>Arashiyama</b> e na Togetsukyo Bridge. Últimas compras com TAX FREE. Ao fim da tarde, comboio <b>Haruka</b> para o aeroporto de Kansai (~80 min). Descolagem às <b>23:10</b> em voo Emirates.</p>
+          <div class="tip">Malas na consigna da estação de Kyoto de manhã — passa-se o último dia de mãos livres.</div>
+        </div>
+      </div>
+
+      <div class="day">
+        <div class="d-rail"><div class="d-num">Dia 15</div><div class="d-date"><b>11 nov</b>quarta</div></div>
+        <div class="d-body">
+          <div class="d-head"><span class="d-title">🇵🇹 Chegada a Lisboa</span><span class="d-place air">Portugal</span></div>
+          <p>Aterragem em Lisboa às <b>12:00</b>, com o coração cheio de memórias. Sayōnara, Nippon! またいつか。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- KINOSAKI -->
+<section id="kinosaki" class="onsen-sec">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>A noite em <em>Kinosaki Onsen.</em></h2>
+      <p>8 para 9 de novembro. A única noite da viagem em que a cidade inteira é o hotel — e o roupão é o traje oficial.</p>
+    </div>
+
+    <div class="onsen-intro rv">
+      <div>
+        <p>Kinosaki é uma aldeia termal com mil e trezentos anos, construída ao longo de um canal de salgueiros
+        e pontes de pedra, na costa do Mar do Japão. O que a torna única é o costume: em vez de um grande
+        banho no hotel, existem <b>sete banhos públicos</b> espalhados pela aldeia — os <i>soto-yu</i> — e os
+        hóspedes vão de um para o outro ao longo da noite.</p>
+        <p>À chegada ao ryokan trocamos a roupa por <b>yukata</b> e <b>geta</b> (os tamancos de madeira) e é
+        assim que se anda na rua, ao som seco dos tamancos na pedra. O <b>passe dos banhos está incluído</b>
+        na estadia — entra-se em todos sem pagar nada à porta.</p>
+        <p>Não é preciso fazer os seis. Três ou quatro numa noite é o ritmo certo, com paragens pelo caminho
+        para um <i>onsen tamago</i> ou uma cerveja gelada.</p>
+      </div>
+
+      <aside class="ryokan-card">
+        <div class="rk-t">Ryokan Akaishiya</div>
+        <div class="rk-jp">明石屋</div>
+        <ul class="rk-list">
+          <li><b>Noite</b><span>8 → 9 de novembro (domingo)</span></li>
+          <li><b>Quartos</b><span>Estilo japonês, futon sobre tatami</span></li>
+          <li><b>Jantar</b><span>Kaiseki no ryokan, servido cedo</span></li>
+          <li><b>Passe</b><span>Soto-yu incluído na estadia</span></li>
+          <li><b>Yukata</b><span>Fornecido, com geta e toalha</span></li>
+          <li><b>Caranguejo</b><span>Época matsuba abre a 6 nov</span></li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="rv">
+      <div class="pass-title">Os banhos, pela ordem que faz sentido</div>
+      <p class="pass-sub">Uma sugestão de rota: começar pelo mais distante e ir descendo o canal em direção ao ryokan.</p>
+
+      <div class="baths">
+        <div class="bath">
+          <div class="b-n">01</div>
+          <div class="b-name">Kōno-yu</div>
+          <div class="b-jp">鴻の湯</div>
+          <p>O mais antigo e o mais afastado, no cimo da rua. Banho exterior de pedra rodeado de jardim — o melhor <i>rotenburo</i> da aldeia. Vale a caminhada.</p>
+          <span class="b-tag">Reabre a 30 out</span>
+        </div>
+
+        <div class="bath">
+          <div class="b-n">02</div>
+          <div class="b-name">Mandara-yu</div>
+          <div class="b-jp">まんだら湯</div>
+          <p>Pequeno e recatado, com banheiras exteriores em barril de cipreste, uma pessoa de cada vez. O mais íntimo dos sete.</p>
+          <span class="b-tag">Abre às 15:00</span>
+        </div>
+
+        <div class="bath">
+          <div class="b-n">03</div>
+          <div class="b-name">Gosho-no-yu</div>
+          <div class="b-jp">御所の湯</div>
+          <p>O mais imponente, inspirado no palácio imperial de Kyoto. Banho exterior com uma cascata a cair sobre a rocha. O mais fotografado.</p>
+          <span class="b-tag">Beleza · Amor</span>
+        </div>
+
+        <div class="bath">
+          <div class="b-n">04</div>
+          <div class="b-name">Ichino-yu</div>
+          <div class="b-jp">一の湯</div>
+          <p>Fachada de teatro kabuki, mesmo à beira do canal. Lá dentro, um banho escavado numa gruta de rocha — o mais surpreendente.</p>
+          <span class="b-tag">Banho de gruta</span>
+        </div>
+
+        <div class="bath">
+          <div class="b-n">05</div>
+          <div class="b-name">Yanagi-yu</div>
+          <div class="b-jp">柳湯</div>
+          <p>O mais pequeno, todo em madeira, debaixo dos salgueiros que dão nome à rua. Só banho interior, rápido de fazer.</p>
+          <span class="b-tag">Abre às 15:00</span>
+        </div>
+
+        <div class="bath">
+          <div class="b-n">06</div>
+          <div class="b-name">Jizō-yu</div>
+          <div class="b-jp">地蔵湯</div>
+          <p>O banho dos habitantes locais, junto à ponte. Janelas em lanterna hexagonal e água muito quente. Bom para terminar a noite.</p>
+          <span class="b-tag">Perto do ryokan</span>
+        </div>
+
+        <div class="bath closed">
+          <div class="b-n">07</div>
+          <div class="b-name">Sato-no-yu</div>
+          <div class="b-jp">さとの湯</div>
+          <p>O maior, junto à estação, com sauna e banhos panorâmicos. Encerrado para obras de fundo — não estará disponível.</p>
+          <span class="b-tag off">Encerrado até 2030</span>
+        </div>
+      </div>
+
+      <div class="onsen-note">
+        Seis dos sete banhos abertos na nossa noite. Cada casa tem o seu dia de descanso semanal, mas
+        ao domingo estão todas a funcionar — confirmamos os horários à chegada, na receção do ryokan.
+      </div>
+
+      <div class="cards rv" style="margin-top:34px">
+        <div class="card">
+          <span class="c-ic">🧖</span>
+          <h4>Como se entra num onsen</h4>
+          <p>Lava-se e enxagua-se <b>completamente</b> sentado no banquinho, antes de entrar na água. A toalha pequena nunca entra na banheira — pousa-se na cabeça ou na borda.</p>
+        </div>
+        <div class="card">
+          <span class="c-ic">🩹</span>
+          <h4>Tatuagens</h4>
+          <p>Kinosaki é <b>tolerante</b>, ao contrário de muitos onsen. Tatuagens pequenas podem ainda assim ser cobertas com um penso, por delicadeza.</p>
+        </div>
+        <div class="card">
+          <span class="c-ic">🦀</span>
+          <h4>Caranguejo matsuba</h4>
+          <p>A época abre a <b>6 de novembro</b> — chegamos dois dias depois. É a especialidade absoluta desta costa e vale a pena provar.</p>
+        </div>
+        <div class="card">
+          <span class="c-ic">🚡</span>
+          <h4>Se sobrar manhã</h4>
+          <p>O teleférico sobe ao templo <b>Onsenji</b> e ao miradouro sobre a aldeia. Vinte minutos, e a vista compensa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CITAÇÃO -->
+<section>
+  <div class="wrap">
+    <blockquote class="quote rv">
+      Viajar ao Japão não é apenas visitar um país — é entrar numa dimensão onde cada detalhe tem
+      significado, onde a beleza está no minimalismo e a força na gentileza.
+      <cite>Manuel Pedro Nabais 🌸</cite>
+    </blockquote>
+  </div>
+</section>
+
+<!-- DICAS -->
+<section id="dicas">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Tudo o que precisas <em>de saber.</em></h2>
+      <p>De Portugal até ao hotel — para viajares com total confiança.</p>
+    </div>
+    <div class="cards rv">
+      <div class="card"><span class="c-ic">🛂</span><h4>Visto digital</h4><p>Uma semana antes, entra em <b>vjw.digital.go.jp</b> e preenche a entrada no Japão. Guarda o código de barras na galeria — na alfândega não precisas de internet.</p></div>
+      <div class="card"><span class="c-ic">💳</span><h4>Dinheiro e pagamentos</h4><p>Leva <b>10.000 a 15.000 ¥</b> em numerário. Os ATM da 7-Eleven têm interface em português. Usa Revolut ou N26 e escolhe <b>sempre pagar em ienes</b>.</p></div>
+      <div class="card"><span class="c-ic">📱</span><h4>Internet e telemóvel</h4><p>Desliga o roaming. Há internet em todos os hotéis e passeios. Leva <b>power bank</b> e adaptador de corrente comprado em Portugal.</p></div>
+      <div class="card"><span class="c-ic">🎫</span><h4>Bilhetes antecipados</h4><p>Shibuya Sky e Tokyo Skytree esgotam em minutos. Comprados <b>30 dias antes</b>, para o fim do dia (16:30–17:00), a apanhar o pôr do sol.</p></div>
+      <div class="card"><span class="c-ic">⏰</span><h4>Ritmo da viagem</h4><p>Em novembro o sol nasce às 06:15 e põe-se às <b>16:45</b>. Pequeno-almoço às 07:30, saída às 08:30 — sair cedo é a chave para evitar multidões.</p></div>
+      <div class="card"><span class="c-ic">🍁</span><h4>Época do koyo</h4><p>Apanhamos o <b>auge do outono</b>: Nikko no início de novembro, Kyoto a meio. É a época mais bonita e também a mais concorrida — daí sairmos sempre cedo.</p></div>
+      <div class="card"><span class="c-ic">🧥</span><h4>O que vestir</h4><p>Entre <b>8 e 18 °C</b>, com manhãs frias e tardes amenas. Camadas: t-shirt, camisola e casaco corta-vento. Um guarda-chuva pequeno na mochila.</p></div>
+      <div class="card"><span class="c-ic">🏪</span><h4>A 7-Eleven é tua amiga</h4><p>Aberta 24 horas com tudo — refeições, snacks, ATM em português. A tua base de operações em qualquer cidade do Japão.</p></div>
+      <div class="card"><span class="c-ic">👟</span><h4>Calçado e conforto</h4><p>São muitos quilómetros por dia. Ténis confortáveis e que se <b>tirem facilmente</b> — vais descalçar-te em templos e no ryokan.</p></div>
+      <div class="card"><span class="c-ic">🗂️</span><h4>Passaporte sempre contigo</h4><p>Dá acesso ao <b>TAX FREE</b> em muitas lojas. Guarda a morada dos hotéis em japonês no telemóvel — fornecida pelo Manuel Pedro Nabais.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- BAGAGEM -->
+<section id="bagagem">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Bagagem: <em>o guia definitivo.</em></h2>
+      <p>Regras diferentes para o avião e para o comboio-bala. É a segunda que costuma apanhar as pessoas desprevenidas.</p>
+    </div>
+    <div class="bag-grid rv">
+      <div class="bag">
+        <h4>✈️ Avião</h4><div class="bg-s">Emirates</div>
+        <ul>
+          <li>Mala de porão · máximo <b>23 kg</b></li>
+          <li>Mala de cabine · máximo <b>7 kg</b></li>
+          <li>Cabine · 55 + 38 + 22 = <b>115 cm</b></li>
+        </ul>
+      </div>
+      <div class="bag">
+        <h4>🚄 Shinkansen</h4><div class="bg-s">Comboio-bala</div>
+        <ul>
+          <li>Total das três dimensões · máx. <b>160 cm</b></li>
+          <li>Altura 75 + largura 50 + prof. 35 cm</li>
+          <li>Malas maiores exigem <b>lugar reservado</b> à parte</li>
+        </ul>
+      </div>
+      <div class="bag">
+        <h4>✅ A combinação ideal</h4><div class="bg-s">Recomendado</div>
+        <ul>
+          <li><b>1 mala grande</b> de porão dentro das medidas do Shinkansen</li>
+          <li><b>1 mochila</b> de costas para o dia a dia</li>
+          <li>Mãos livres = passeios sem stress</li>
+          <li>No Japão compra-se tudo — não vás carregado</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ETIQUETA -->
+<section id="regras">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <h2>Etiqueta: <em>respeitar é viajar melhor.</em></h2>
+      <p>Regras sociais que, quando respeitadas, tornam a experiência muito mais rica.</p>
+    </div>
+    <div class="etiq rv">
+      <div class="et"><b>⬅️ Caminhar pela esquerda</b><span>Em escadas de metro e estações, anda sempre pelo lado esquerdo.</span></div>
+      <div class="et"><b>🚭 Não fumar na rua</b><span>Só em locais sinalizados — existem zonas próprias para fumadores.</span></div>
+      <div class="et"><b>🔇 Telemóvel em silêncio</b><span>Sempre no modo silencioso, sobretudo nos transportes.</span></div>
+      <div class="et"><b>❌ Gorjeta não se dá</b><span>É considerada um insulto à cultura de serviço japonesa.</span></div>
+      <div class="et"><b>🚶 Respeitar as passadeiras</b><span>Nunca atravessar no vermelho — os japoneses esperam sempre.</span></div>
+      <div class="et"><b>🍱 Comer sentado</b><span>Na rua come-se parado, num banco ou lugar fixo. Nunca a caminhar.</span></div>
+      <div class="et"><b>🗑️ Guardar o lixo</b><span>Há poucas papeleiras. Leva o lixo para o hotel — as ruas estão imaculadas.</span></div>
+      <div class="et"><b>👟 Sapatos fora</b><span>Em muitos templos, e sempre no ryokan, descalça-se à entrada.</span></div>
+      <div class="et"><b>🚽 WC de cinco estrelas</b><span>Os das estações e do metro estão impecáveis. Usa sem receio.</span></div>
+      <div class="et"><b>🧠 Abertura cultural</b><span>Preparação mental para uma nova realidade: o País do Sol Nascente.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contacto">
+  <div class="wrap">
+    <h2 class="rv">Pronto para a viagem<br>da tua vida? 🌸</h2>
+    <p class="rv">Junta-te ao grupo e deixa que o <b>Manuel Pedro Nabais</b> trate de tudo — para só teres de aproveitar cada momento no Japão.</p>
+    <a href="mailto:manuelnabais@gmail.com?subject=Japão%202026%20·%2028%20out%20—%2011%20nov" class="btn rv">📩 Quero o meu lugar</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot-in">
+    <div>© 2026 · <b>Manuel Pedro Nabais</b> · Guia de Viagem ao Japão</div>
+    <div>Tel. <a href="tel:+351925486494">925 486 494</a> · Instagram <a href="https://instagram.com/indiemania">@indiemania</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    document.querySelectorAll('.rv').forEach(function(el){el.classList.add('in');});
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){
+      if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.08, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.rv').forEach(function(el){ io.observe(el); });
+})();
+</script>
+</body>
+</html>
