@@ -7,20 +7,20 @@
 <meta name="description" content="Roteiro completo da viagem ao Japão de 28 de outubro a 11 de novembro de 2026. Tokyo, Nikko, Hakone, Kanazawa, Kyoto e Kinosaki Onsen.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Zen+Kurenaido&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#DCD2C0;
-  --paper-2:#EBE4D6;
-  --paper-3:#CEC2AB;
-  --ink:#241E19;
-  --ink-dim:#665B4E;
-  --momiji:#AD3020;
-  --momiji-lit:#C03A28;
-  --kaki:#A96A11;
-  --kin:#8A6E2F;
+  --paper:#EFE9DD;
+  --paper-2:#FBF8F2;
+  --paper-3:#DFD5C2;
+  --ink:#181310;
+  --ink-dim:#463E35;
+  --momiji:#96271A;
+  --momiji-lit:#A82D1E;
+  --kaki:#82500B;
+  --kin:#6B5522;
   --matsu:#3E5546;
-  --rule:rgba(36,30,25,.2);
+  --rule:rgba(24,19,16,.24);
   --max:1140px;
   --display:'Shippori Mincho',Georgia,serif;
   --body:'Zen Kaku Gothic New',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
@@ -30,7 +30,7 @@
 html{scroll-behavior:smooth;scroll-padding-top:76px;-webkit-text-size-adjust:100%}
 body{
   background:var(--paper);color:var(--ink);
-  font-family:var(--body);font-weight:300;font-size:17px;line-height:1.72;
+  font-family:var(--body);font-weight:400;font-size:18px;line-height:1.75;
   overflow-x:hidden;
 }
 img{max-width:100%;display:block}
@@ -40,7 +40,7 @@ a{color:inherit}
 /* ---------- NAV ---------- */
 nav{
   position:sticky;top:0;z-index:60;
-  background:rgba(220,210,192,.92);backdrop-filter:blur(14px);
+  background:rgba(239,233,221,.95);backdrop-filter:blur(14px);
   border-bottom:1px solid var(--rule);
 }
 .nav-in{max-width:var(--max);margin:0 auto;padding:14px 24px;display:flex;align-items:center;gap:28px}
@@ -65,7 +65,7 @@ nav{
 }
 .kanji-ghost{
   position:absolute;right:-4%;top:2%;font-family:var(--display);font-weight:800;
-  font-size:clamp(200px,34vw,420px);line-height:.82;color:rgba(36,30,25,.07);
+  font-size:clamp(200px,34vw,420px);line-height:.82;color:rgba(24,19,16,.05);
   user-select:none;pointer-events:none;letter-spacing:-.04em;
 }
 .hero .wrap{position:relative;z-index:2}
@@ -80,11 +80,11 @@ h1{
 }
 h1 em{font-style:normal;color:var(--momiji-lit)}
 .hero-jp{font-family:var(--display);font-size:clamp(1.1rem,3vw,1.5rem);color:var(--ink-dim);letter-spacing:.34em;margin-bottom:30px}
-.hero-lede{max-width:610px;font-size:1.06rem;color:#4C443A;margin-bottom:38px}
+.hero-lede{max-width:610px;font-size:1.12rem;color:#2E2721;margin-bottom:38px}
 
 .datestrip{
   display:flex;flex-wrap:wrap;align-items:stretch;gap:0;
-  border:1px solid var(--rule);border-radius:3px;background:rgba(240,234,222,.85);
+  border:1px solid var(--rule);border-radius:3px;background:rgba(253,251,247,.9);
   max-width:720px;margin-bottom:34px;
 }
 .ds-cell{padding:18px 26px;flex:1 1 150px;border-right:1px solid var(--rule)}
@@ -111,12 +111,12 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
   line-height:1.08;letter-spacing:-.015em;margin-bottom:16px;
 }
 .sec-head h2 em{font-style:italic;color:var(--kaki);font-weight:600}
-.sec-head p{color:var(--ink-dim);font-size:1.02rem}
+.sec-head p{color:var(--ink-dim);font-size:1.08rem}
 
 /* ---------- VOOS ---------- */
 .flights{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:22px}
 .flight{
-  border:1px solid var(--rule);background:linear-gradient(165deg,#F2ECE0,var(--paper-2));
+  border:1px solid var(--rule);background:linear-gradient(165deg,#FFFFFF,var(--paper-2));
   border-radius:3px;padding:30px 28px;position:relative;overflow:hidden;
 }
 .flight::after{content:"";position:absolute;top:0;left:0;width:100%;height:2px;background:linear-gradient(90deg,var(--momiji),var(--kaki))}
@@ -125,12 +125,12 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
 .f-pt{flex:1}
 .f-city{font-family:var(--display);font-weight:600;font-size:1.5rem;line-height:1.15}
 .f-time{font-family:var(--display);font-weight:800;font-size:2.1rem;color:var(--momiji-lit);line-height:1.1;letter-spacing:-.02em}
-.f-date{font-size:.82rem;color:var(--ink-dim);letter-spacing:.05em}
+.f-date{font-size:.9rem;color:var(--ink-dim);letter-spacing:.05em}
 .f-mid{display:flex;flex-direction:column;align-items:center;justify-content:center;padding-top:12px;min-width:52px}
 .f-mid span{font-size:.64rem;letter-spacing:.14em;color:var(--ink-dim);text-transform:uppercase;margin-top:6px}
 .f-line{width:100%;height:1px;background:var(--rule);position:relative}
-.f-line::after{content:"✈";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#F0EADE;padding:0 6px;color:var(--kin);font-size:.9rem}
-.f-foot{border-top:1px dashed var(--rule);padding-top:16px;margin-top:6px;font-size:.88rem;color:var(--ink-dim)}
+.f-line::after{content:"✈";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#FCFAF6;padding:0 6px;color:var(--kin);font-size:.9rem}
+.f-foot{border-top:1px dashed var(--rule);padding-top:16px;margin-top:6px;font-size:.96rem;color:var(--ink-dim)}
 .f-foot strong{color:var(--ink);font-weight:500}
 
 /* ---------- HOTÉIS ---------- */
@@ -144,7 +144,7 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
 .h-city{font-family:var(--display);font-weight:800;font-size:1.18rem;letter-spacing:.01em}
 .h-city small{display:block;font-family:var(--display);font-weight:400;font-size:.9rem;color:var(--kin);letter-spacing:.2em;margin-top:2px}
 .h-name{font-size:1.02rem;font-weight:500;color:var(--ink)}
-.h-name span{display:block;font-weight:300;font-size:.86rem;color:var(--ink-dim);margin-top:3px}
+.h-name span{display:block;font-weight:400;font-size:.94rem;color:var(--ink-dim);margin-top:3px}
 .h-nights{text-align:right;white-space:nowrap}
 .h-n{font-family:var(--display);font-weight:800;font-size:1.8rem;color:var(--momiji-lit);line-height:1}
 .h-nlabel{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-dim)}
@@ -157,8 +157,8 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
 .d-badge{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--kaki);border:1px solid var(--rule);padding:4px 10px;border-radius:2px}
 .dest h3{font-family:var(--display);font-weight:800;font-size:1.7rem;line-height:1.1}
 .d-jp{font-family:var(--display);color:var(--kin);letter-spacing:.3em;font-size:1rem;margin:2px 0 14px}
-.dest p{font-size:.94rem;color:var(--ink-dim);margin-bottom:18px}
-.dest ul{list-style:none;font-size:.9rem}
+.dest p{font-size:1rem;color:var(--ink-dim);margin-bottom:18px}
+.dest ul{list-style:none;font-size:.97rem}
 .dest li{padding:7px 0 7px 20px;position:relative;border-top:1px solid rgba(36,30,25,.14)}
 .dest li::before{content:"—";position:absolute;left:0;color:var(--momiji)}
 .dest li b{font-weight:500;color:var(--ink)}
@@ -174,7 +174,7 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
   border-right:1px solid var(--rule);padding:26px 18px 26px 0;text-align:right;position:relative;
 }
 .d-num{font-family:var(--display);font-weight:800;font-size:1.05rem;color:var(--kaki);letter-spacing:.04em}
-.d-date{font-size:.8rem;color:var(--ink-dim);margin-top:2px;line-height:1.35}
+.d-date{font-size:.88rem;color:var(--ink-dim);margin-top:2px;line-height:1.35}
 .d-date b{display:block;color:var(--ink);font-weight:500;font-size:.95rem}
 .d-body{padding:26px 0 26px 26px}
 .d-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:8px}
@@ -183,9 +183,9 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
 .d-place.tokyo{background:var(--momiji);color:#fff}
 .d-place.air{background:var(--matsu);color:#FFFFFF}
 .d-place.onsen{background:var(--kaki);color:#fff}
-.d-body p{font-size:.97rem;color:#4C443A}
+.d-body p{font-size:1.04rem;color:#2E2721}
 .tip{
-  margin-top:14px;font-family:var(--hand);font-size:.97rem;color:var(--kaki);
+  margin-top:14px;font-family:var(--hand);font-size:1.05rem;color:var(--kaki);
   border-left:2px solid var(--kaki);padding:4px 0 4px 14px;
 }
 
@@ -195,19 +195,19 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
   var(--paper-2);
 }
 .onsen-intro{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start;margin-bottom:46px}
-.onsen-intro p{color:#4C443A;margin-bottom:16px}
-.ryokan-card{border:1px solid var(--kin);border-radius:3px;padding:26px;background:rgba(240,234,222,.9)}
+.onsen-intro p{color:#2E2721;margin-bottom:16px;font-size:1.04rem}
+.ryokan-card{border:1px solid var(--kin);border-radius:3px;padding:26px;background:rgba(253,251,247,.95)}
 .ryokan-card .rk-t{font-family:var(--display);font-weight:800;font-size:1.35rem;margin-bottom:4px}
 .ryokan-card .rk-jp{font-family:var(--display);color:var(--kin);letter-spacing:.25em;margin-bottom:16px;font-size:.95rem}
-.rk-list{list-style:none;font-size:.92rem}
+.rk-list{list-style:none;font-size:1rem}
 .rk-list li{padding:8px 0;border-top:1px solid rgba(36,30,25,.16);display:flex;gap:12px}
 .rk-list li b{color:var(--kaki);font-weight:500;min-width:88px;flex-shrink:0}
 
 .pass-title{font-family:var(--display);font-weight:800;font-size:1.5rem;margin-bottom:6px}
-.pass-sub{color:var(--ink-dim);font-size:.94rem;margin-bottom:26px}
+.pass-sub{color:var(--ink-dim);font-size:1.02rem;margin-bottom:26px}
 .baths{display:grid;grid-template-columns:repeat(auto-fit,minmax(228px,1fr));gap:14px}
 .bath{
-  border:1px solid var(--rule);border-radius:3px;padding:20px;background:rgba(240,234,222,.86);
+  border:1px solid var(--rule);border-radius:3px;padding:20px;background:rgba(253,251,247,.92);
   position:relative;transition:.22s;
 }
 .bath:hover{border-color:var(--kaki);transform:translateY(-3px)}
@@ -215,7 +215,7 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
 .b-n{font-family:var(--display);font-weight:800;font-size:1.6rem;color:rgba(36,30,25,.16);line-height:1;position:absolute;top:16px;right:18px}
 .b-name{font-family:var(--display);font-weight:600;font-size:1.12rem}
 .b-jp{font-family:var(--display);color:var(--kin);letter-spacing:.18em;font-size:.85rem;margin:1px 0 10px}
-.bath p{font-size:.88rem;color:var(--ink-dim);line-height:1.6}
+.bath p{font-size:.96rem;color:var(--ink-dim);line-height:1.6}
 .b-tag{display:inline-block;margin-top:10px;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--kaki);border:1px solid var(--rule);padding:3px 8px;border-radius:2px}
 .b-tag.off{color:var(--momiji-lit)}
 .onsen-note{margin-top:26px;border-left:2px solid var(--momiji);padding-left:18px;font-family:var(--hand);color:var(--kaki);font-size:1rem}
@@ -226,27 +226,27 @@ section{padding:88px 0;border-top:1px solid rgba(36,30,25,.15)}
 .card:hover{border-color:var(--kin)}
 .c-ic{font-size:1.5rem;margin-bottom:12px;display:block}
 .card h4{font-family:var(--display);font-weight:600;font-size:1.14rem;margin-bottom:8px}
-.card p{font-size:.92rem;color:var(--ink-dim)}
+.card p{font-size:.99rem;color:var(--ink-dim)}
 .card p b{color:var(--ink);font-weight:500}
 
 .bag-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px}
 .bag{border:1px solid var(--rule);border-radius:3px;padding:26px 24px;background:var(--paper-2)}
 .bag h4{font-family:var(--display);font-weight:800;font-size:1.16rem;margin-bottom:4px}
 .bag .bg-s{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;color:var(--kaki);margin-bottom:16px}
-.bag ul{list-style:none;font-size:.93rem}
+.bag ul{list-style:none;font-size:1rem}
 .bag li{padding:9px 0;border-top:1px solid rgba(36,30,25,.15);color:var(--ink-dim)}
 .bag li b{color:var(--ink);font-weight:500}
 
 .etiq{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0;border:1px solid var(--rule);border-radius:3px;overflow:hidden}
 .et{padding:22px 24px;border-right:1px solid rgba(36,30,25,.15);border-bottom:1px solid rgba(36,30,25,.15)}
 .et b{display:block;font-family:var(--display);font-weight:600;font-size:1.04rem;margin-bottom:5px}
-.et span{font-size:.88rem;color:var(--ink-dim)}
+.et span{font-size:.96rem;color:var(--ink-dim)}
 
 /* ---------- CTA / FOOTER ---------- */
 .cta{text-align:center;padding:96px 0}
 .cta h2{font-family:var(--display);font-weight:800;font-size:clamp(2rem,5.5vw,3.4rem);line-height:1.08;margin-bottom:18px}
 .cta p{color:var(--ink-dim);max-width:540px;margin:0 auto 34px}
-footer{border-top:1px solid var(--rule);padding:34px 0;font-size:.85rem;color:var(--ink-dim)}
+footer{border-top:1px solid var(--rule);padding:34px 0;font-size:.93rem;color:var(--ink-dim)}
 .foot-in{display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between;align-items:center}
 footer b{color:var(--ink);font-weight:500}
 footer a{color:var(--kin);text-decoration:none}
@@ -254,7 +254,7 @@ footer a:hover{text-decoration:underline}
 
 .quote{
   font-family:var(--display);font-style:italic;font-size:clamp(1.15rem,2.6vw,1.6rem);
-  line-height:1.55;max-width:760px;color:#332C25;border-left:2px solid var(--momiji);padding-left:26px;
+  line-height:1.55;max-width:760px;color:#221C17;border-left:2px solid var(--momiji);padding-left:26px;
 }
 .quote cite{display:block;font-style:normal;font-size:.88rem;letter-spacing:.12em;text-transform:uppercase;color:var(--kaki);margin-top:18px;font-family:var(--body)}
 
@@ -271,7 +271,7 @@ footer a:hover{text-decoration:underline}
   .h-nlabel{display:inline;margin-left:6px}
 }
 @media (max-width:640px){
-  body{font-size:16px}
+  body{font-size:17.5px}
   section{padding:64px 0}
   .hero{padding:64px 0 54px}
   .day{grid-template-columns:1fr}
